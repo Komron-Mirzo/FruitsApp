@@ -129,7 +129,7 @@ class _FruitsPageState extends State<FruitsPage> {
                       MaterialPageRoute(
                         builder: (context) => SingleFruit(
                           singleFruitImage: 'img/fruits/strawberry.png',
-                          singleFruitPrice: '1 kg',
+                          singleFruitPrice: 2.45,
                           singleFruitName: 'Strawberries',
                           singleFruitDescription:
                               "Mango's tropical taste has a universal appeal. The meat has sweetnes of a peach. This apricot colored fruit has just enough fiber to give it some chewiness.",
@@ -155,7 +155,7 @@ class _FruitsPageState extends State<FruitsPage> {
                       MaterialPageRoute(
                         builder: (context) => SingleFruit(
                           singleFruitImage: 'img/fruits/pinapple.png',
-                          singleFruitPrice: '1 kg',
+                          singleFruitPrice: 1.52,
                           singleFruitName: 'Pineapple',
                           singleFruitDescription:
                               "Mango's tropical taste has a universal appeal. The meat has sweetnes of a peach. This apricot colored fruit has just enough fiber to give it some chewiness.",
@@ -181,7 +181,7 @@ class _FruitsPageState extends State<FruitsPage> {
                       MaterialPageRoute(
                         builder: (context) => SingleFruit(
                           singleFruitImage: 'img/fruits/blueberries.png',
-                          singleFruitPrice: '1 kg',
+                          singleFruitPrice: 4.07,
                           singleFruitName: 'Blueberries',
                           singleFruitDescription:
                               "Mango's tropical taste has a universal appeal. The meat has sweetnes of a peach. This apricot colored fruit has just enough fiber to give it some chewiness.",
@@ -207,7 +207,7 @@ class _FruitsPageState extends State<FruitsPage> {
                       MaterialPageRoute(
                         builder: (context) => SingleFruit(
                           singleFruitImage: 'img/fruits/watermelon.png',
-                          singleFruitPrice: '1 kg',
+                          singleFruitPrice: 5.07,
                           singleFruitName: 'Watermelon',
                           singleFruitDescription:
                               "Mango's tropical taste has a universal appeal. The meat has sweetnes of a peach. This apricot colored fruit has just enough fiber to give it some chewiness.",
@@ -233,7 +233,7 @@ class _FruitsPageState extends State<FruitsPage> {
                       MaterialPageRoute(
                         builder: (context) => SingleFruit(
                           singleFruitImage: 'img/fruits/peach.png',
-                          singleFruitPrice: '1 kg',
+                          singleFruitPrice: 1.36,
                           singleFruitName: 'Peach',
                           singleFruitDescription:
                               "Mango's tropical taste has a universal appeal. The meat has sweetnes of a peach. This apricot colored fruit has just enough fiber to give it some chewiness.",
@@ -259,7 +259,7 @@ class _FruitsPageState extends State<FruitsPage> {
                       MaterialPageRoute(
                         builder: (context) => SingleFruit(
                           singleFruitImage: 'img/fruits/grape.png',
-                          singleFruitPrice: '1 kg',
+                          singleFruitPrice: 0.89,
                           singleFruitName: 'Grape',
                           singleFruitDescription:
                               "Mango's tropical taste has a universal appeal. The meat has sweetnes of a peach. This apricot colored fruit has just enough fiber to give it some chewiness.",
@@ -277,6 +277,9 @@ class _FruitsPageState extends State<FruitsPage> {
                     fruitUnit: "1 kg",
                     fruitPrice: "\$0.89",
                   ),
+                ),
+                const SizedBox(
+                  height: 30.0,
                 ),
               ],
             ),
