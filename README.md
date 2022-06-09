@@ -4,7 +4,8 @@ Fruis Shop App UI Design in Flutter
 
 ## Here is the Outcome
 
-![fruits Ui gif](https://user-images.githubusercontent.com/74512232/172814849-6e329529-d50b-41dd-9486-80550e489f59.gif)
+![fruitsApp ui gif](https://user-images.githubusercontent.com/74512232/172815814-d4270402-2d01-4d70-80d7-932856a8c4dc.gif)
+
 
 ## UI design Copyright Anastasia
 
