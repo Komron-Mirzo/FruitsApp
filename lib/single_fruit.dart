@@ -144,29 +144,29 @@ class _SingleFruitState extends State<SingleFruit> {
                           children: [
                             Row(
                               children: [
-                                Container(
-                                  alignment: AlignmentDirectional.center,
-                                  height: 50.0,
-                                  width: 50.0,
-                                  decoration: BoxDecoration(
-                                    color: AppColor.cardGreyColor,
-                                    borderRadius: const BorderRadius.only(
-                                      topLeft: Radius.circular(
-                                        20.0,
-                                      ),
-                                      bottomLeft: Radius.circular(
-                                        20.0,
+                                GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      fruitAmount >= 2
+                                          ? fruitAmount--
+                                          : fruitAmount;
+                                    });
+                                  },
+                                  child: Container(
+                                    alignment: AlignmentDirectional.center,
+                                    height: 50.0,
+                                    width: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: AppColor.cardGreyColor,
+                                      borderRadius: const BorderRadius.only(
+                                        topLeft: Radius.circular(
+                                          20.0,
+                                        ),
+                                        bottomLeft: Radius.circular(
+                                          20.0,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      setState(() {
-                                        fruitAmount >= 2
-                                            ? fruitAmount--
-                                            : fruitAmount;
-                                      });
-                                    },
                                     child: const FaIcon(
                                       FontAwesomeIcons.minus,
                                       size: 15.0,
@@ -187,31 +187,31 @@ class _SingleFruitState extends State<SingleFruit> {
                                     ),
                                   ),
                                 ),
-                                Container(
-                                  alignment: AlignmentDirectional.center,
-                                  height: 50.0,
-                                  width: 50.0,
-                                  decoration: BoxDecoration(
-                                    color: AppColor.cardGreyColor,
-                                    borderRadius: const BorderRadius.only(
-                                      topRight: Radius.circular(
-                                        20.0,
-                                      ),
-                                      bottomRight: Radius.circular(
-                                        20.0,
+                                GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      fruitAmount >= 1
+                                          ? fruitAmount++
+                                          : fruitAmount;
+
+                                      widget.singleFruitPrice * fruitAmount;
+                                    });
+                                  },
+                                  child: Container(
+                                    alignment: AlignmentDirectional.center,
+                                    height: 50.0,
+                                    width: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: AppColor.cardGreyColor,
+                                      borderRadius: const BorderRadius.only(
+                                        topRight: Radius.circular(
+                                          20.0,
+                                        ),
+                                        bottomRight: Radius.circular(
+                                          20.0,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      setState(() {
-                                        fruitAmount >= 1
-                                            ? fruitAmount++
-                                            : fruitAmount;
-
-                                        widget.singleFruitPrice * fruitAmount;
-                                      });
-                                    },
                                     child: const FaIcon(
                                       FontAwesomeIcons.plus,
                                       size: 15.0,
